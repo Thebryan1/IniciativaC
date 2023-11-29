@@ -1,0 +1,129 @@
+﻿/* Puedes agregar estilos personalizados aquí si es necesario */
+body {
+    font-family: 'Font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8A2BE2; /* Morado */
+    color: #ffffff; /* Color de texto blanco */
+}
+
+header, footer {
+    text-align: center;
+    background-color: #4B0082; /* Morado oscuro */
+    padding: 10px;
+}
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.content-left, .content-right {
+    flex: 1;
+}
+
+#miCarrousel {
+    width: 70%;
+    margin: auto;
+}
+/* Establecer el tamaño de las imágenes en el carrusel */
+.carousel-inner img {
+    width: 100%; /* O ajusta el porcentaje que desees */
+    height: auto; /* Esto asegura que la altura se ajuste proporcionalmente al ancho */
+}
+
+.carousel-item img {
+    width: 100%; /* Ajusta el ancho según tus preferencias */
+    height: 800px; /* Establece una altura fija para mantener la proporción original */
+    object-fit: cover; /* Cubre el contenedor manteniendo la proporción original */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los indicadores de círculos */
+.carousel-indicators {
+    margin-top: 20px;
+}
+
+.carousel-indicators li {
+    background-color: transparent !important; /* Fondo transparente para ocultar las líneas */
+    border: 1px solid #060308 !important; /* Borde de los círculos */
+    border-radius: 50% !important; /* Hace que el borde sea redondeado para formar un círculo */
+    width: 12px !important; /* Ancho del círculo */
+    height: 12px !important; /* Altura del círculo */
+    margin-right: 5px !important; /* Espaciado entre los círculos */
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: #070308 !important; /* Color de fondo del círculo activo */
+}
+header h1 {
+    font-family: 'Your Desired Font', sans-serif; /* Reemplaza 'Your Desired Font' con la fuente que desees */
+    color: #ffffff; /* Color de texto blanco */
+}
+.content-left, .content-right {
+    text-align: center;
+}
+
+/* Estilo para los cuadros de información y preguntas frecuentes */
+.info-box, .faq-box {
+    background-color: #8A2BE2; /* Morado */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 20px; /* Espaciado entre los cuadros y otros elementos */
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Cambia a diseño de columna en pantallas más pequeñas */
+        align-items: stretch;
+    }
+
+    .content-left, .content-right {
+        margin-bottom: 20px; /* Espaciado entre los cuadros en pantallas más pequeñas */
+    }
+}
+.content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-left img {
+    width: 100px; /* Ancho deseado */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-bottom: 10px; /* Espaciado entre las imágenes */
+}
+/* Agregar transición para un efecto suave */
+.left-image {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.left-image.active {
+    display: block;
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-right {
+        width: 100%;
+    }
+    .content-left img {
+        width: 80px; /* Cambiar el tamaño de las imágenes para dispositivos móviles */
+    }
+}
+
+
+
+
+
+

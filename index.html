@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciativa</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agregar la hoja de estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8A2BE2; /* Morado */
+            color: #ffffff; /* Color de texto blanco */
+        }
+        header {
+            text-align: center;
+            background-color: #4B0082; /* Morado oscuro */
+            padding: 20px;
+        }
+        .main-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .content-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Alineación del contenido a la izquierda */
+        }
+        .content-left div {
+            display: flex;
+            align-items: center; /* Alineación vertical de la imagen y el texto */
+            margin-bottom: 20px; /* Espacio entre elementos */
+            width: 400px; /* Ancho fijo para los contenedores */
+            height: 50px; /* Altura fija para los contenedores */
+        }
+        .content-left img {
+            width: 60px; /* Reducción del tamaño de la imagen */
+            height: auto;
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+            border-radius: 50%; /* Bordes redondeados */
+        }
+        .button-container {
+            background-color: #4B0082; /* Color de fondo */
+            padding: 10px 15px; /* Espaciado interno */
+            border-radius: 8px; /* Bordes redondeados */
+            cursor: pointer; /* Cambio de cursor al pasar sobre el elemento */
+            width: 100%; /* Hacer que todos los contenedores tengan el mismo ancho */
+        }
+        .button-container:hover {
+            background-color: #6A5ACD; /* Cambio de color al pasar sobre el botón */
+        }
+        .button-container p {
+            margin: 0; /* Eliminar márgenes por defecto del párrafo */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Las Diferentes Áreas Que Encontrarás en tu Universidad</h1>
+    </header>
+    <div class="main-container">
+        <div class="content-left">
+           <div class="button-container" onclick="cambiarImagen(0)">
+                <img src="a.png" alt="Otra Imagen 1">
+                <p>Centro de Atención Psicológica</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(1)">
+                <img src="b.png" alt="Otra Imagen 2">
+                <p>Centro de Atención y Soluciones</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(2)">
+                <img src="c.png" alt="Otra Imagen 3">
+                <p>Coordinación Académica</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(3)">
+                <img src="d.png" alt="Otra Imagen 4">
+                <p>Registros Académicos</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(4)">
+                <img src="e.png" alt="Otra Imagen 5">
+                <p>Centro de Idiomas</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(5)">
+                <img src="f.png" alt="Otra Imagen 6">
+                <p>Servicio Social</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(6)">
+                <img src="g.png" alt="Otra Imagen 7">
+                <p>Tutoría y Reincorporación</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(7)">
+                <img src="h.png" alt="Otra Imagen 8">
+                <p>Empleabilidad</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(8)">
+                <img src="i.png" alt="Otra Imagen 9">
+                <p>Mentoría Universitaria</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(9)">
+                <img src="j.png" alt="Otra Imagen 10">
+                <p>Mesa de Ayuda</p>
+            </div>
+            <div class="button-container" onclick="cambiarImagen(10)">
+                <img src="k.png" alt="Otra Imagen 11">
+                <p>Vive Continental</p>
+            </div>
+        </div>
+         <!-- Agregar el carrousel de Bootstrap -->
+    <div id="miCarrousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.png" alt="Imagen 1" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+                <img src="2.png" alt="Imagen 2" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+                <img src="3.png" alt="Imagen 3" style="width: 100%; height: auto;">
+            </div>
+	    <div class="carousel-item">
+                <img src="4.png" alt="Imagen 4" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+                <img src="5.png" alt="Imagen 5" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+                <img src="6.png" alt="Imagen 6" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+                <img src="7.png" alt="Imagen 7" style="width: 100%; height: auto;">
+            </div>
+            <div class="carousel-item">
+                <img src="8.png" alt="Imagen 8" style="width: 100%; height: auto;">
+            </div>
+	    <div class="carousel-item">
+                <img src="9.png" alt="Imagen 9" style="width: 100%; height: auto;">
+            </div>
+	    <div class="carousel-item">
+                <img src="10.png" alt="Imagen 10" style="width: 100%; height: auto;">
+            </div>
+	    <div class="carousel-item">
+              	<img src="11.png" alt="Imagen 10" style="width: 100%; height: auto;">
+            </div>
+        </div>
+        <!-- Indicadores de puntos -->
+        <ul class="carousel-indicators">
+            <li data-target="#miCarrousel" data-slide-to="0" class="active"></li>
+            <li data-target="#miCarrousel" data-slide-to="1"></li>
+            <li data-target="#miCarrousel" data-slide-to="2"></li>
+            <li data-target="#miCarrousel" data-slide-to="3"></li>
+            <li data-target="#miCarrousel" data-slide-to="4"></li>
+            <li data-target="#miCarrousel" data-slide-to="5"></li>
+            <li data-target="#miCarrousel" data-slide-to="6"></li>
+            <li data-target="#miCarrousel" data-slide-to="7"></li>
+            <li data-target="#miCarrousel" data-slide-to="8"></li>
+	    <li data-target="#miCarrousel" data-slide-to="9"></li>
+	    <li data-target="#miCarrousel" data-slide-to="10"></li>
+ 	    <li data-target="#miCarrousel" data-slide-to="11"></li>
+        </ul>
+    </div>
+    
+
+   
+    <!-- Agregar los scripts de Bootstrap y el archivo JavaScript personalizado -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+<script>
+        function cambiarImagen(numero) {
+            $('#miCarrousel').carousel(numero); // Cambia a la imagen correspondiente en el carrusel
+        }
+    </script>
+</body>
+</html>
+
+   
+    <!-- Agregar los scripts de Bootstrap y el archivo JavaScript personalizado -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
