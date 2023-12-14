@@ -195,16 +195,17 @@
         function cambiarImagen(numero) {
             $('#miCarrousel').carousel(numero); // Cambia a la imagen correspondiente en el carrusel
         }
-	window.addEventListener("orientationchange", function() {
-            if (window.orientation !== 0) {
+	function checkOrientation() {
+            if (window.innerWidth < window.innerHeight) {
                 document.getElementById("rotateMessage").style.display = "block";
             } else {
                 document.getElementById("rotateMessage").style.display = "none";
             }
-        });
+        }
+
+        window.addEventListener("resize", checkOrientation);
+        checkOrientation(); // Comprobar la orientación al cargar la página
     </script>
 </body>
 </html>
 
-   
-   
